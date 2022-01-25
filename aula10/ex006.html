@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt arial;
+            background: lightseagreen;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        body {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="area"> <!-- onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> --> 
+        Interaja...
+    </div>
+
+    <script>
+        var a = document.getElementById("area")
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            //var a = document.getElementById("area")
+            a.innerText = 'Boa man kk'
+            a.style.background = "mediumvioletred"
+        }
+        function entrar() {
+            //var e = document.getElementById("area")
+            a.innerText = "Ai sim kk"
+            a.style.background = "lightgreen"
+        }
+        function sair() {
+            //var s = document.getElementById("area")
+            a.innerText = "Saiu"
+            a.style.background = "lightseagreen"
+        }
+        //os itens em comentários, simbolizam uma segunda forma de realizar as mesmas funções!
+    </script>
+</body>
+</html>

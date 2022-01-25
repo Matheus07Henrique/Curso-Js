@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>VERIFICAÇÃO DE NACIONALIDADE</h1>
+    Digite o seu país de origem: <input type="texp" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var p = document.getElementById("txtp")
+            var res = document.getElementById("res")
+            var a = String(p.value)
+
+            if (a == "brasil" || a == "brasil") {
+                res.innerHTML = "Você é brasileiro(a)!"
+            }else{
+                res.innerHTML = "Você é estrangeiro(a)!"
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+body {
+background: lightgreen;
+font: normal 15pt arial;
+}
+header{
+color: white;
+text-align: center; /*alinhamento do texto*/
+}
+section {
+background: white; /*cor de fundo branco*/
+border-radius: 10px; /*raio da borda*/
+padding: 15px; 
+width: 500px; /*largura*/
+margin: auto; /*margem*/
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301); /*sombra da caixa*/
+}
+footer {
+color: white;
+text-align: center; /*alinhamento do texto*/
+font-style: italic; /*estilo da fonte*/
+
+}
